@@ -15,7 +15,7 @@ passport.deserializeUser(function(id, done) {
 //TODO SQL query
   console.log('called deserializeUser');
   pool.connect(function (err, client) {
-
+    console.log(client);
     var user = {};
     console.log('called deserializeUser - pg');
       var query = client.query("SELECT * FROM users WHERE id = $1", [id]);
