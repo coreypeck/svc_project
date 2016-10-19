@@ -671,7 +671,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         text: "50",
         textSpecial: "(victim_age >= 50)"
     }, {
-        table: "victim_age_unknown",
+        table: "victim_age",
         text: "null",
         textSpecial: "victim_age is null"
     }, {
