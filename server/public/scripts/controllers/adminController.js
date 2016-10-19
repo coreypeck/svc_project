@@ -1,11 +1,11 @@
 myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal', 'loggedinFactory', function($scope, $http, $location, $uibModal, loggedinFactory) {
 
     loggedinFactory.isLoggedIn().then(function(response) {
-        console.log('The person logged in:', response);
-        console.log('the type of the person logged in:', response.user_type)
+        // console.log('The person logged in:', response);
+        // console.log('the type of the person logged in:', response.user_type)
             // $scope.user = response;
         if (response.user_type !== 'admin') {
-            console.log('send home');
+            // console.log('send home');
             $location.path('/home');
         }
     });
@@ -841,7 +841,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
 
                     //assigns count value;
                     $scope.countyInfo[objectParam] = parseInt(response.data[0].count);
-                    console.log($scope.countyInfo);
+                    // console.log($scope.countyInfo);
                     // console.log(response.data[0]);
                     // console.log($scope.countyInfo);
                 }, function() {

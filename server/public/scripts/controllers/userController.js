@@ -2,11 +2,11 @@ myApp.controller('userController', ['$scope', '$http', '$location', '$uibModal',
   // console.log("userController is running");
 
   loggedinFactory.isLoggedIn().then(function(response) {
-      console.log('The person logged in:', response);
-      console.log('the type of the person logged in:', response.user_type)
+      // console.log('The person logged in:', response);
+      // console.log('the type of the person logged in:', response.user_type)
       // $scope.user = response;
       if (response.user_type !== 'admin') {
-          console.log('send home');
+          // console.log('send home');
           $location.path('/home');
       }
   });
@@ -46,17 +46,17 @@ myApp.controller('userController', ['$scope', '$http', '$location', '$uibModal',
   }
 
   $scope.getUser = function() {
-      console.log('called getUser');
+      // console.log('called getUser');
       $http.get('/getUser').then(function(response) {
-        console.log(response.data);
+        // console.log(response.data);
         $scope.users = response.data;
       });
   }
 
   $scope.deleteUser = function(userID){
-        console.log(userID);
+        // console.log(userID);
         $http.delete('/deleteUser/' + userID).then(function(){
-          console.log('delete went through');
+          // console.log('delete went through');
           $scope.getUser();
         });
       }

@@ -105,8 +105,8 @@ router.post('/federal/:id', function(req, res) {
 router.post('/county/edit', function(req, res) {
 var table = req.body.table;
 var number = req.body.number;
-console.log(table);
-console.log(number);
+// console.log(table);
+// console.log(number);
 pool.connect(function (err, client, done){
   if(err){
     res.sendStatus(500);
@@ -391,8 +391,8 @@ router.post('/playground/nonVictim', function(req, res) {
 router.post('/playground/victim', function(req, res) {
     var start = req.body.start;
     var end = req.body.end;
-    console.log(start);
-    console.log(end);
+    // console.log(start);
+    // console.log(end);
     pool.connect(function(err, client, done) {
         if (err) {
             console.log('ERROR, connection to PG', err);
