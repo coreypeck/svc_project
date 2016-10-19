@@ -657,7 +657,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
     }, {
         table: "victim_immigrant_total",
         text: "total",
-        textSpecial: "(victim_immigrant iLike 'Africa' OR victim_immigrant iLike 'Asia' OR victim_immigrant iLike 'Europe' OR victim_immigrant iLike 'Mex/Cen/So America' OR victim_immigrant iLike 'Middle East' OR victim_immigrant iLike 'Other' OR victim_immigrant is null)"
+        textSpecial: "(victim_immigrant iLike 'Africa' OR victim_immigrant iLike 'Asia' OR victim_immigrant iLike 'Europe' OR victim_immigrant iLike 'Mex/Cen/So America' OR victim_immigrant iLike 'Middle East' OR victim_immigrant iLike 'Other')"
     }, {
         table: "victim_age",
         text: "018",
@@ -672,7 +672,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "(victim_age >= 50)"
     }, {
         table: "victim_age_unknown",
-        text: "",
+        text: "null",
         textSpecial: "victim_age is null"
     }, {
         table: "victim_age",
