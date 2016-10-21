@@ -196,19 +196,22 @@
                             <label>Is this an advocacy request?</label>
                             <input type="radio" name="request" ng-model="form.request" ng-value="true"> Yes
                             <input type="radio" name="request" ng-model="form.request" ng-value="false"> No
+                            <input type="radio" name="request" ng-model="form.request" ng-value=null>N/A
                             </br>
                             <label for="advacacyLocation">If yes, where to?:</label>
                             <input class="advacacyLocation" type="text" ng-model="form.advacacyLocation" />
                         </div>
                         <div>
                             <label>Is this an medical advocacy request?</label>
-                            <input type="radio" name="request" ng-model="form.medicalAdvocacyRequest" ng-value="true"> Yes
-                            <input type="radio" name="request" ng-model="form.medicalAdvocacyRequest" ng-value="false"> No
+                            <input type="radio" name="medRequest" ng-model="form.medicalAdvocacyRequest" ng-value="true"> Yes
+                            <input type="radio" name="medRequest" ng-model="form.medicalAdvocacyRequest" ng-value="false"> No
+                            <input type="radio" name="medRequest" ng-model="form.medicalAdvocacyRequest" ng-value=null>N/A
                         </div>
                         <div class="dispatched">
                             <label for="dispatched">If yes, was an advocate dispatched?:</label>
                             <input type="radio" name="dispatched" ng-model="form.dispatched" ng-value="true">Yes
                             <input type="radio" name="dispatched" ng-model="form.dispatched" ng-value="false">No
+                            <input type="radio" name="dispatched" ng-model="form.dispatched" ng-value=null>N/A
                         </div>
                         <div class="responded">
                             <label for="responded">If yes, who responded?:</label>

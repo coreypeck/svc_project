@@ -168,6 +168,7 @@
                         <label for="supported">Did you feel that you were supported on this call?</label>
                         <input type="radio" name="supported" ng-model="form.supported" ng-value="true">Yes
                         <input type="radio" name="supported" ng-model="form.supported" ng-value="false">No
+                        <input type="radio" name="supported" ng-model="form.supported" ng-value=null>N/A
                     </div>
                     <div ng-show="newFiscalYear" class="demoCollection">
                         <div class="alert alert-info">
@@ -245,6 +246,7 @@
                             <label for="multiple">Was there MORE than one type of sexual violence?:</label>
                             <input type="radio" name="multiple" ng-model="form.multiple" value="true"> Yes
                             <input type="radio" name="multiple" ng-model="form.multiple" value="false"> No
+                            <input type="radio" name="multiple" ng-model="form.multiple" ng-value=null>N/A
                         </div>
                         <label for="victimDemoSurvey">Victim/Survivor Demographic Survey</label>
                         <div class="victimDemoSurvey">
@@ -256,11 +258,12 @@
                             <input type="radio" name="gender" ng-model="form.gender" value="Female"> Female
                             <input type="radio" name="gender" ng-model="form.gender" value="Non-binary">Non-binary
                             <input type="radio" name="gender" ng-model="form.gender" value="other"> Other
+                            <input type="radio" name="gender" ng-model="form.gender" ng-value=null>N/A
                             </br>
                             <label for="transgender">Transgender:</label>
-                            <input type="radio" name="transgender" ng-model="form.trans" value="true"> Yes
-                            <input type="radio" name="transgender" ng-model="form.trans" value="false"> No
-                            <input type="radio" name="transgender" ng-model="form.trans" value="null"> Unknown/Pass
+                            <input type="radio" name="transgender" ng-model="form.trans" ng-value="true"> Yes
+                            <input type="radio" name="transgender" ng-model="form.trans" ng-value="false"> No
+                            <input type="radio" name="transgender" ng-model="form.trans" ng-value=null> Unknown/Pass
                             <div>
                                 <label for="sexualOrientation">Sexual Orientation:</label>
                                 <!-- <input class="orientationInput" type="text" ng-model="form.orientation" /> -->
