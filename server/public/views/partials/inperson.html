@@ -108,18 +108,19 @@
           </div>
           <div class="previousContact">
             <label for="previousContact">Has the Victim/Survivor contacted SVC before?</label>
-            <input type="radio" name="previousContact" ng-model="form.previousContact" ng-click="previousVisit = true" ng-value="true">Yes
+            <input type="radio" name="re" ng-model="form.previousContact" ng-click="previousVisit = true" ng-value="true">Yes
             <input type="radio" name="previousContact" ng-model="form.previousContact" ng-click="newFiscalYear = true" ng-value="false">No
           </div>
           <div ng-show="previousVisit" class="dateCheck">
             <label for="dateCheck">If YES, was contact made before October 1st, {{checkOctoberFirst}}</label>
-            <input type="radio" name="previousVisit" ng-model="form.previousVisit" ng-click="newFiscalYear = true" ng-value="true">Yes
-            <input type="radio" name="previousVisit" ng-model="form.previousVisit" ng-click="newFiscalYear = false" ng-value="false">No
+            <input type="radio" name="previousVisit" ng-model="form.previousVisit" ng-value="true">Yes
+            <input type="radio" name="previousVisit" ng-model="form.previousVisit" ng-value="false">No
           </div>
           <div class="transportation">
             <label for="transportation">Did you provide (taxi) transportation?</label>
-            <input type="radio" name="transportation" ng-model="form.transportation" ng-value="true">Yes
+            <input type="radio" name="transportation" ng-model="form.transportation" ng-value="true" >Yes
             <input type="radio" name="transportation" ng-model="form.transportation" ng-value="false">No
+            <input type="radio" name="transportation" ng-model="form.transportation" ng-value=null>N/A
           </div>
           <div ng-show="newFiscalYear">
             <div class="alert alert-info">
@@ -134,6 +135,7 @@
             <div class="kim_padding_top kim_padding">
               <input type="radio" name="counseling" ng-model="thing.counseling" value="counseling"> One-to-One Counseling
               <input type="radio" name="counseling" ng-model="thing.counseling" value="supportGroup"> Support Group
+              <input type="radio" name="counseling" ng-model="thing.counseling" ng-value=null>N/A
             </div>
             <div class="legalAdvocacyCriminal">
               <label for="legalAdvocacy">Legal Advocacy Criminal Justice Process:</label><br>
@@ -141,6 +143,7 @@
                 <input type="radio" name="legalAdvocacyCriminal" ng-model="thing.legalAdvocacyCriminal" value="lawEnforcementInterview"> Law enforcement interview
                 <input type="radio" name="legalAdvocacyCriminal" ng-model="thing.legalAdvocacyCriminal" value="prosecutionRelatedAdvocacy">Prosecution related advocacy
                 <input type="radio" name="legalAdvocacyCriminal" ng-model="thing.legalAdvocacyCriminal" value="courtAdvocacy">Court advocacy (criminal case)
+                <input type="radio" name="legalAdvocacyCriminal" ng-model="thing.legalAdvocacyCriminal" ng-value=null>N/A
               </div>
             <div class="legalAdvocacyCivil">
               <label for="legalAdvocacy">Legal Advocacy Civil Justice Process:</label><br>
@@ -148,6 +151,7 @@
                 <input type="radio" name="legalAdvocacyCivil" ng-model="thing.legalAdvocacyCivil" value="assistOFP_HRO"> <span class="kimMakeFitX">Assistance obtaining OFP or HRO</span>
                 <input type="radio" name="legalAdvocacyCivil" ng-model="thing.legalAdvocacyCivil" value="immigrationSupport"> <span class="kimMakeFitX">Immigration related support (U Visa, ect.)</span>
                 <input type="radio" name="legalAdvocacyCivil" ng-model="thing.legalAdvocacyCivil" value="immigrationSupport"> <span class="kimMakeFitX">Intervention with landloard, acedemic institution or creditor </span>
+                <input type="radio" name="legalAdvocacyCivil" ng-model="thing.legalAdvocacyCivil" ng-value=null>N/A
               </div>
             </div>
             <div class="medicalAdvocacy">
@@ -156,6 +160,7 @@
                 <input type="radio" name="medicalAdvocacy" ng-model="thing.medicalAdvocacy" value="forensicExamSupport"> Forensic exam support
                 <input type="radio" name="medicalAdvocacy" ng-model="thing.medicalAdvocacy" value="accompanyMedicalAppt"> Accompaniment to medical appointment
                 <input type="radio" name="medicalAdvocacy" ng-model="thing.medicalAdvocacy" value="accompanyDentalAppt"> Accompaniment to dental appointment
+                <input type="radio" name="medicalAdvocacy" ng-model="thing.medicalAdvocacy" ng-value=null>N/A
               </div>
             <div class="otherClientServices">
               <label for="otherClientServices">Other In-Person Advocacy Services(check all that apply):</label>
@@ -273,6 +278,7 @@
               <label for="multiple">Was there MORE than one type of sexual violence?:</label>
               <input type="radio" name="multiple" ng-model="form.multiple" ng-value="true"> Yes
               <input type="radio" name="multiple" ng-model="form.multiple" ng-value="false"> No
+              <input type="radio" name="multiple" ng-model="form.multiple" ng-value="null"> N/A
             </div>
               <div class="victimDemoSurvey">
                 <label for="victimDemoSurvey">Victim/Survivor Demographic Survey</label>
@@ -285,6 +291,7 @@
                 <input type="radio" name="gender" ng-model="form.gender" value="Female"> Female
                 <input type="radio" name="gender" ng-model="form.gender" value="Non-binary"> Non-binary
                 <input type="radio" name="gender" ng-model="form.gender" value="other"> Other
+                <input type="radio" name="gender" ng-model="form.gender" ng-value="null"> N/A
                 <br/>
                 <label for="transgender">Transgender:</label>
                 <input type="radio" name="transgender" ng-model="form.trans" value="true"> Yes
