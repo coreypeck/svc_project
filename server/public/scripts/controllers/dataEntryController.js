@@ -22,6 +22,11 @@ myApp.controller('dataEntryController', ['$scope', '$http', '$location', '$timeo
         return year;
       }
     }
+    $scope.uncheck = function(id){
+      console.log($scope.form);
+      delete $scope.form[id];
+      console.log($scope.form);
+    }
     $scope.checkOctoberFirst = checkFiscal();
     $scope.isLoggedIn = function() {
         loggedinFactory.isLoggedIn().then(function(response) {
