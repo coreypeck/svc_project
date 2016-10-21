@@ -68,7 +68,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "hawaiian_pacific_islander"
     }, {
         table: "victim_ethnicity",
-        text: "White Non-Latino or Caucasian",
+        text: "White Non-Latino/Caucasian",
         textSpecial: "white"
     }, {
         table: "victim_ethnicity",
