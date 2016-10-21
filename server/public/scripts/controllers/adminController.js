@@ -68,7 +68,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "hawaiian_pacific_islander"
     }, {
         table: "victim_ethnicity",
-        text: "White Non-Latino/Caucasian",
+        text: "White non-Latino/Caucasian",
         textSpecial: "white"
     }, {
         table: "victim_ethnicity",
@@ -84,7 +84,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "unknown"
     }, {
         table: "victim_ethnicity_total",
-        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White Non-Latino or Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)"
+        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White non-Latino/Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)"
     }, {
         //Question 5B
         table: "victim_gender",
@@ -590,7 +590,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "hawaiian_pacific_islander"
     }, {
         table: "victim_ethnicity",
-        text: "White Non-Latino or Caucasian",
+        text: "White non-Latino/Caucasian",
         textSpecial: "white"
     }, {
         table: "victim_ethnicity",
@@ -607,7 +607,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
     }, {
         table: "victim_ethnicity_total",
         text: "total",
-        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White Non-Latino or Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)"
+        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White non-Latino or Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)"
     }, {
         table: "victim_gender",
         text: "Male"
@@ -1549,7 +1549,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         bound: "showCaucassian",
         table: "victim_ethnicity",
         infoTable: "victim",
-        text: "White Non-Latino or Caucasian",
+        text: "White non-Latino/Caucasian",
         textSpecial: "white",
 
     }, {
@@ -1577,7 +1577,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         bound: "showEthnicityTotal",
         table: "victim_ethnicity_total",
         infoTable: "victim",
-        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White Non-Latino or Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)",
+        textSpecial: "(victim_ethnicity iLike 'Native American' OR victim_ethnicity iLike 'Asian' OR victim_ethnicity iLike 'African American/Black' OR victim_ethnicity iLike 'Chican@/Latin@' OR victim_ethnicity iLike 'Native Hawaiian/Pacific Islander' OR victim_ethnicity iLike 'White Non-Latino/Caucasian' OR victim_ethnicity iLike 'Other' OR victim_ethnicity iLike 'Multi-Racial' OR victim_ethnicity is null)",
 
     }, {
         bound: "immigrantAfrica",
