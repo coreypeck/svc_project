@@ -194,7 +194,7 @@ router.post('/county/:id', function(req, res) {
             query = stringQueryWhere + hennepin + " AND " + textSpecial + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log('immigrant:', query);
         } else if (table ==  "locations") {
-            query = selectDistinct + hennepin + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
+            query = selectDistinct + hennepin + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "AND service_location IS NOT NULL'";
             // console.log('SPECIAL', query);
         } else if (text == null){
             query = stringQueryWhere + hennepin + " AND (" + table + is + text + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "')";
