@@ -41,7 +41,11 @@
         <h3 class="formHeader">In-Person Contact Form</h3>
         <div class="advocacyType">
           <label for="advocacyType">Type of Advocacy:</label>
-            <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='in-person'" ng-value="In-person"  placeholder="In-Person Advocacy" readonly/>
+            <!-- <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='in-person'" ng-value="In-person"  placeholder="In-Person Advocacy" readonly/> -->
+            <select ng-model="form.advocacyType">
+              <option value="">Select One</option>
+              <option value="in-person">In-Person</option>
+            </select>
           <div class="counselor">
             <label for="counselorName">Advocate/Counselor Name:</label>
             <input class="counselorInput" type="text" ng-model="form.counselor" />

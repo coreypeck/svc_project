@@ -48,8 +48,12 @@
 
                     <div class="advocayType">
               <label for="advocayType">Type of Advocacy:</label>
-              <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='phone'" ng-value="phone"  placeholder="Phone Advocacy" readonly/>
-
+              <!-- <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='phone'" ng-value="phone"  placeholder="Phone Advocacy" readonly/> -->
+                
+            <select ng-model="form.advocacyType">
+              <option value="">Select One</option>
+              <option value="phone">Phone</option>
+            </select>
                   </div>
 
                         <div class="counselor">
