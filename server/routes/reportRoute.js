@@ -79,9 +79,12 @@ router.post('/federal/:id', function(req, res) {
         } else if (text == "not null"){
             query = stringQueryWhere + table + is + text + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log(query);            
-        } else if (table == "contact_type"){
-            query = stringQueryWhere + table + iLike + "'" + textSpecial + "'" + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
+        } else if (textSpecial == "in-person"){
+            query = stringQueryWhere + table + iLike + "'" + text + "'" + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log(query);
+        } else if (textSpecial == "phone"){
+            query = stringQueryWhere + table + iLike + "'" + text + "'" + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
+            // console.log(query);    
         } else {
             query = stringQueryWhere + table + iLike + "'" + text + "'" + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log(query);

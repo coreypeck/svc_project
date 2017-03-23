@@ -2512,7 +2512,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         bound: "phoneContact",
         table: "contact_type",
         infoTable: "victim",
-        text: "Phone",
+        text: "phone",
 
     }, {
         bound: "nonVictimMedical",
