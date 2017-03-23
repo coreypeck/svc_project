@@ -343,6 +343,8 @@ router.post('/playground/victim/:id', function(req, res) {
         } else if (table == "advocacy_request") {
             query = "SELECT COUNT (*) FROM nonvictim WHERE " + table + is + "true" + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log('nonvictim query:', query);
+        } else if (table == "supported_on_call"){
+            query = "SELECT COUNT (*) FROM victim WHERE " + table + is + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
         } else {
             query = stringQueryWhere + table + iLike + "'" + text + "'" + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log('other queries:', query);

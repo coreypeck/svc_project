@@ -168,7 +168,7 @@ myApp.controller('dataEntryController', ['$scope', '$http', '$location', '$timeo
                 });
                 var data = $scope.form;
                 data.date_entered = new Date();
-                // console.log(data);
+                console.log(data);
                 $http.post('/dataRoute/victim', data).then(function(response) {
                         $scope.form = {
                             counselor: null,

@@ -47,10 +47,10 @@
                     <h3 class="formHeader">Telephone Contact Form </h3>
 
                     <div class="advocayType">
-              <label for="advocayType">Type of Advocacy:</label>
-              <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='phone'" ng-value="phone"  placeholder="Phone Advocacy" readonly/>
-
-                  </div>
+                      <!-- <label for="advocayType">Type of Advocacy:</label>
+                      <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='phone'" ng-value="phone"  placeholder="Phone Advocacy" readonly/> -->
+                        <input type="radio" name="advocacyType" ng-model="form.advocacyType"  ng-value="phone" ng-checked="true"/>Phone
+                    </div>
 
                         <div class="counselor">
                             <label for="counselorName">Advocate/Counselor Name:</label>
