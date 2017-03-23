@@ -45,8 +45,12 @@
             <!-- <input type="radio" name="advocacyType" ng-model="form.advocacyType"  ng-value="in-person" ng-checked="true"/>In-Person
             <input type="radio" name="advocacyType" ng-model="form.advocacyType"  ng-value="phone" />Phone -->
 
-            <input type="checkbox" name="advocacyType" ng-model="form.advocacyType" ng-value="in-person">Contact Type: In-Person
-
+            <!-- <input type="checkbox" name="advocacyType" ng-model="form.advocacyType" ng- --><!-- value="in-person">Contact Type: In-Person -->
+            <label for="advocacyType">Contact Type:</label>
+            <select ng-model="form.advocacyType">
+              <option value="in-person">In-Person</option>
+              <option value="phone">Phone</option>
+            </select>
           <div class="counselor">
             <label for="counselorName">Advocate/Counselor Name:</label>
             <input class="counselorInput" type="text" ng-model="form.counselor" />
