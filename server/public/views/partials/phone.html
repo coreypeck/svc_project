@@ -47,14 +47,10 @@
                     <h3 class="formHeader">Telephone Contact Form </h3>
 
                     <div class="advocayType">
+              <label for="advocayType">Type of Advocacy:</label>
+              <input class="phone" type="text" ng-model="form.advocacyType" ng-init="form.advocacyType='phone'" ng-value="phone"  placeholder="Phone Advocacy" readonly/>
 
-                    <label for="advocacyType">Contact Type:</label>
-                    <select ng-model="form.advocacyType">
-                      <option value="">Select One</option>
-                      <option value="phone">Phone</option>
-                      <option value="in-person">In-Person</option>
-                    </select>
-                    </div>
+                  </div>
 
                         <div class="counselor">
                             <label for="counselorName">Advocate/Counselor Name:</label>
