@@ -149,9 +149,9 @@ myApp.controller('dataEntryController', ['$scope', '$http', '$location', '$timeo
     //End MODAL WINDOW
   
     $scope.submitVictimForm = function() {
-            if ($scope.form.date == null) {
+            if ($scope.form.date == null OR $scope.form.advocacyType == null) {
                 $scope.showMessage = true
-                $scope.message = "Please enter a date before submitting your request.";
+                $scope.message = "Please enter a date and check the Contact Type box before submitting your request.";
                 updateScroll();
             } else {
                 $scope.showMessage = false
