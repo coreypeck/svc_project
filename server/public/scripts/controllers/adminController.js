@@ -80,7 +80,7 @@ myApp.controller('adminController', ['$scope', '$http', '$location', '$uibModal'
         textSpecial: "multi_racial"
     }, {
         table: "victim_ethnicity",
-        text: null,
+        text: "unknown",
         textSpecial: "unknown"
     }, {
         table: "victim_ethnicity_total",

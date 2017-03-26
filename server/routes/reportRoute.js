@@ -76,8 +76,8 @@ router.post('/federal/:id', function(req, res) {
         } else if (text == null){
             query = stringQueryWhere + table + is + text + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log(query);
-        } else if (table == "victim_ethnicity"){
-            query = stringQueryWhere + table + is + textSpecial + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
+        // } else if (table == "victim_ethnicity"){
+        //     query = stringQueryWhere + table + is + textSpecial + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
             // console.log(query);    
         } else if (text == "not null"){
             query = stringQueryWhere + table + is + text + checkFirstTimer + greaterThanOrEqual + "'" + dateStart + "'" + lessThan + "'" + dateEnd + "'";
