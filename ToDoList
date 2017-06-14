@@ -1,0 +1,23 @@
+There is a change in language to a major question on both the yellow and pink sheet. Where it asks "have they contacted svc before?" it is now
+"is this their first contact with svc?"
+
+"Is this their first contact with SVC?"
+YES - prompt to take demographics and report them as a new person (for both yellow and pink sheets)
+NO- no need to prompt for demographics
+
+"Was the contact before Oct 1, 2016?"
+YES - prompt for demographics
+NO- nothing
+
+Additionally, we have added a new question to the yellow sheet. We realized that our current way of doing things wasn't capturing the data well. The question is:
+
+6. Has the victim/survivor used this type of in-person service since October 1, 2016?
+
+YES - then just consider them a contact but not a new person
+NO - Consider them a new contact for that in-person service (whether it is support group, one-to-one counseling, forensic exam support, etc.
+
+Hopefully there is a way to do this that won't duplicate numbers and conflict with the "is this their first contact with SVC?" question.
+
+For example, a person called on the phone to make an appointment for a one-to-one counseling session. They've technically contacted us before and we would have recorded
+that on a pink sheet. For the yellow sheet, we want to recognize that we've made contact with them before (is this their first contact with SVC?) but also acknowledge
+whether or not this is their first time using a specific in-person service (have they used this type of service since oct 1?).
